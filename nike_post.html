@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Nike Olympics — VW</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/templatemo-main.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+    <div class="parallax-content nike-post-web-content d-flex" id="home">
+        <div class="flex-column col-md-6">
+            <div class="flex-column col-md-6 mt-auto p-2 project-button">
+                <img src="../img/logoW.png" class="img-fluid" alt="Responsive image"
+                    onclick="location.href='index.html';document.title='VW'">
+            </div>
+        </div>
+        <div class="flex-column col-md-6">
+            <div class="row justify-content-end">
+                <div class="col-md-3">
+                    <h1 onclick="location.href='about_me.html';document.title='About me — VW'">ABOUT ME</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project-text" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 project-text">
+                    <h2>NIKE OLYMPICS EXPERIENTIAL CONCEPT</h2>
+                    <h3>
+                        For a pitch for the Nike Olympics we were asked to create a campaign to grow expectations for
+                        the Olympics and make people feel like athletes. I designed the visuals for the campaign that my
+                        team and I created with the concept “Raise the bar”. The idea was that each individual would
+                        send their km run to a visual infographic that was placed around the city and Nike stores. The
+                        total km run was shown in a visually attractive way to show how each one of them was
+                        contributing to raise the bar. The experiential activation was interactive and users were able
+                        to see their personal profiles and the amount of km run.
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <img src="../img/nike_post_explained.jpg" class="img-fluid mx-auto d-block" alt="Responsive image">
+
+        <br>
+
+        <img src="../img/nike_post_explained2.jpg" class="img-fluid mx-auto d-block" alt="Responsive image">
+
+        <br>
+
+        <img src="../img/nike_post_explained3.jpg" class="img-fluid mx-auto d-block" alt="Responsive image">
+
+        <br>
+
+        <img src="../img/nike_post_explained4.png" class="img-fluid mx-auto d-block" alt="Responsive image">
+    </div>
+
+    <footer>
+        <div class="container d-flex justify-content-center project-button">
+            <button type="button" class="btn btn-light btn-lg rounded-pill" style="padding: 16px 32px;"
+                onclick="location.href='all_projects.html';document.title='All projects — VW'">VIEW ALL
+                PROJECTS</button>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $(".fixed-side-navbar a, .primary-button a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Have a Camper day — VW</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="css/hero-slider.css">
+    <link rel="stylesheet" href="css/templatemo-main.css">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+    <div class="parallax-content camper-project-web-content d-flex" id="home">
+        <div class="flex-column col-md-6">
+            <div class="flex-column col-md-6 mt-auto p-2 project-button">
+                <img src="../img/logoW.png" class="img-fluid" alt="Responsive image"
+                    onclick="location.href='index.html';document.title='VW'">
+            </div>
+        </div>
+        <div class="flex-column col-md-6">
+            <div class="row justify-content-end">
+                <div class="col-md-3">
+                    <h1 onclick="location.href='about_me.html';document.title='About me — VW'">ABOUT ME</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="project-text" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 toyota-project-text">
+                    <h2>AN EXPERIENTIAL WEATHER APP FOR CAMPER</h2>
+                    <h3>
+                        Camper understands optimism through half imagination and half craft. To communicate this concept
+                        we created an experiential weather forecast app where the weather elements were made of
+                        prêt-a-porter materials and turned them into musical instruments that react to touch.
+                    </h3>
+                    <br>
+                    <h2>THE ASK</h2>
+                    <h3>
+                        I was asked to create concepts for several weather elements. I had to decide the character and
+                        behaviour of each element, the materials used and the interactions.
+
+                        I created and concepted several weather elements through mockups as detailed as possible so that
+                        the 3D designer would build them as beautifully as possible.
+                    </h3>
+                    <br>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h2>THE STORM</h2>
+                    <h3>
+                        I decided the storm had to have a rocker look and feel. Therefore I used leather and zips for
+                        all the elements. The idea of the interactions was to unzip the bolts which therefore would have
+                        a rocking sound. The interaction would be from top to bottom, very similar to how rockers play
+                        their guitar.
+                    </h3>
+                    <br>
+                    <img src="../img/camper_day_explained.jpg" class="img-fluid mx-auto d-block" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container d-flex justify-content-center project-button">
+            <button type="button" class="btn btn-light btn-lg rounded-pill" style="padding: 16px 32px;"
+                onclick="location.href='all_projects.html';document.title='All projects — VW'">VIEW ALL
+                PROJECTS</button>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $(".fixed-side-navbar a, .primary-button a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+</body>
+
+</html>
